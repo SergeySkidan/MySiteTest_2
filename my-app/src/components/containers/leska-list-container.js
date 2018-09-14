@@ -5,7 +5,7 @@ import * as leskaApi from '../../api/leska-api';
 
 import { loadSearchLayout } from '../../actions/search-layout-actions';
 
- class LeskaListContainer extends React.Component{
+export class LeskaListContainer extends React.Component{
 
   componentDidMount = () => {
     leskaApi.getLeskas();
@@ -13,28 +13,18 @@ import { loadSearchLayout } from '../../actions/search-layout-actions';
   }
 
   render() {
+    alert(this.props.products);
     return (
+
       <LeskaList leskas={this.props.leskas} deleteLeska={leskaApi.deleteLeska} />
     );
   }
 };
 
-const mapStateToProps = function(state) {
+const mapStateToProps = function(store) {
   return {
-    leskas: state
+    leskas: store.leskaState.leskas
   };
 };
 
 export default connect(mapStateToProps)(LeskaListContainer);
-
-
-
-// function mapStateToProps(state) {
-//     const { leskas } = state;
-//     return {
-//         leskas
-//     };
-// }
-//
-// const connectedLeskaListContainer = connect(mapStateToProps)(LeskaListContainer);
-// export { connectedLeskaListContainer as LeskaListContainer };

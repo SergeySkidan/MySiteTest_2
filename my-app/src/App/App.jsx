@@ -45,7 +45,7 @@ class App extends React.Component {
 
         const { dispatch } = this.props;
         history.listen((location, action) => {
-
+        // clear alert on location change
             dispatch(alertActions.clear());
         });
     }
@@ -69,7 +69,7 @@ class App extends React.Component {
 
             </header>
 
-            <main id="content" class="main-content">
+            <main id="content" className="main-content">
 
             <ul>
               <li><Link to="/">Главная</Link></li>
@@ -161,15 +161,15 @@ class App extends React.Component {
                   <Route path="/accessories/slingshots" component={() => (<div> Рогатки и катапульты </div>)}/>
                 </aside>
 
-                <aside class="twin">
+                <aside className="twin">
 
                 </aside>
 
-                <aside class="twin">
+                <aside className="twin">
 
                 </aside>
 
-                <footer class="colophon grid">
+                <footer className="colophon grid">
                 &copy; Скидан Сергей
                 </footer>
 

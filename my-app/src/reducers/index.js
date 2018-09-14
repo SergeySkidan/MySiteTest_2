@@ -18,9 +18,10 @@ const reducers = combineReducers({
   registration,
   users,
   alert,
+    leskaReducer,
     productState: productReducer,
     basketState: basketReducer,
-    leskaState: leskaReducer,
+
     searchLayoutState: searchLayoutReducer
 
 

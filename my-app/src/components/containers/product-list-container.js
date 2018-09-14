@@ -5,7 +5,7 @@ import * as productApi from '../../api/product-api';
 
 import { loadSearchLayout } from '../../actions/search-layout-actions';
 
-export default class ProductListContainer extends React.Component{
+export class ProductListContainer extends React.Component{
 
   componentDidMount = () => {
     productApi.getProducts();
@@ -13,18 +13,18 @@ export default class ProductListContainer extends React.Component{
   }
 
   render() {
+
     return (
+
       <ProductList products={this.props.products}/>
     );
   }
 };
 
-function mapStateToProps(state) {
-    const { products } = state;
-    return {
-        products
-    };
-}
+const mapStateToProps = function(store) {
+  return {
+    products: store.productState.products
+  };
+};
 
-const connectedProductListContainer = connect(mapStateToProps)(ProductListContainer);
-export { connectedProductListContainer as ProductListContainer };
+export default connect(mapStateToProps)(ProductListContainer);
