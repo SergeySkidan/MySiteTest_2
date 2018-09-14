@@ -1,6 +1,10 @@
 .app {
-  background: url('http://domikru.net/wp-content/uploads/2014/12/%D1%80%D1%8B%D0%B1%D0%B0%D0%BB%D0%BA%D0%B0.jpg') 50% 50% no-repeat; /* Добавляем фон положение относительно рамки, не повторять */
-  background-size: auto 100%; /* Масштабируем фон */
+  width: 100%;
+  height: 100%;
+  background-image: url("http://sdelatlending.ru/wp-content/themes/xmarkup/img/tileable-wood.png");
+  background-color: #f4debc;
+
+  background-repeat: repeat;
 }
 
 .primary-header,
@@ -32,11 +36,11 @@
 }
 
 .twin {
-	background: #2185C5;
+	background: #e2a74a;
 }
 
 .twin:last-of-type {
-	background: #7ECEFD;
+	background: #f2bf6f;
 }
 
 .colophon {
