@@ -20,13 +20,13 @@ c +=f[i].price
 alert('итого: '+ c);
 }
     return (
-      <BasketList baskets={basketApi.getBaskets()} eleteBasket={basketApi.deleteBasket} estimate = {estimate} />
+      <BasketList baskets={basketApi.getBaskets()} deleteBasket={basketApi.deleteBasket} estimate = {estimate} />
 
     );
   }
 };
 
- 
+
  function mapStateToProps(state) {
      const { baskets } = state;
      return {

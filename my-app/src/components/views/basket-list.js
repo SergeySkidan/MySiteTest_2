@@ -6,11 +6,8 @@ import './basket-list.css';
 export default class BasketList extends React.Component {
   constructor(props) {
         super(props);
-
         this.state = {showAddArea: false};
     }
-
-  
 
   render() {
 
@@ -27,7 +24,7 @@ export default class BasketList extends React.Component {
                 <div className='product__tips'>Цена:{basket.price}</div>
                 <div className='product__tips'>Код товара: {basket.id}</div>
 
-                <button onClick={this.props.deleteBasket} className="delete">Удалить из корзины</button>
+                <button onClick={this.props.deleteBasket.bind(this)} className="delete">Удалить из корзины</button>
 
               </div>
           </div>);
