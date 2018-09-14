@@ -1,0 +1,150 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Леска",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
+      "text": "Varivas Rock Fish Premium 150m",
+      "price": "55"
+    },
+    {
+      "id": 2,
+      "name": "Леска",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
+      "text": "Varivas Rock Fish Premium 150m",
+      "price": "55"
+    },
+    {
+      "id": 3,
+      "name": "Леска",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
+      "text": "Varivas Rock Fish Premium 150m",
+      "price": "55"
+    },
+    {
+      "id": 5,
+      "name": "Спиннинг",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18215110_52733553tmb.jpg",
+      "text": "Favorite X1",
+      "price": "265"
+    },
+    {
+      "id": 4,
+      "name": "Спиннинг",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18237302_52763370tmb.jpg",
+      "text": "Спиннинг Shimano Alivio DX 240H 2.4m 20-50g",
+      "price": "982"
+    },
+    {
+      "id": 8,
+      "name": "Спиннинг",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18237125_52763604tmb.jpg",
+      "text": "Спиннинг Shimano Vengeance AX Tele 3.3m 40-80g",
+      "price": "1340"
+    },
+    {
+      "id": 7,
+      "name": "Спиннинг",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18237152_52758550tmb.jpg",
+      "text": "Спиннинг Shimano Catana EX Telespin 21L 2.1m 3-14g",
+      "price": "1310"
+    },
+    {
+      "id": 6,
+      "name": "Спиннинг",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18168230_52704554tmb.jpg",
+      "text": "Спиннинг Shimano Vengeance AX Tele 3.0m 40-80g",
+      "price": "1170"
+    }
+  ],
+  "leskas": [
+    {
+      "id": 2,
+      "name": "Леска",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
+      "text": "Varivas Rock Fish Premium 150m",
+      "price": "55"
+    },
+    {
+      "id": 3,
+      "name": "Леска",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
+      "text": "Varivas Rock Fish Premium 150m",
+      "price": "55"
+    },
+    {
+      "id": 4,
+      "name": "Леска",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
+      "text": "Varivas Rock Fish Premium 150m",
+      "price": "55"
+    },
+    {
+      "id": 5,
+      "name": "Леска",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
+      "text": "Varivas Rock Fish Premium 150m",
+      "price": "55"
+    },
+    {
+      "id": 6,
+      "name": "Леска",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
+      "text": "Varivas Rock Fish Premium 150m",
+      "price": "55"
+    }
+  ],
+  "spinning": [
+    {
+      "id": 1,
+      "name": "Спиннинг",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18215110_52733553tmb.jpg",
+      "text": "Favorite X1",
+      "price": "265"
+    },
+    {
+      "id": 2,
+      "name": "Спиннинг",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18237302_52763370tmb.jpg",
+      "text": "Спиннинг Shimano Alivio DX 240H 2.4m 20-50g",
+      "price": "982"
+    },
+    {
+      "id": 3,
+      "name": "Спиннинг",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18237125_52763604tmb.jpg",
+      "text": "Спиннинг Shimano Vengeance AX Tele 3.3m 40-80g",
+      "price": "1340"
+    },
+    {
+      "id": 4,
+      "name": "Спиннинг",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18237152_52758550tmb.jpg",
+      "text": "Спиннинг Shimano Catana EX Telespin 21L 2.1m 3-14g",
+      "price": "1310"
+    },
+    {
+      "id": 5,
+      "name": "Спиннинг",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18168230_52704554tmb.jpg",
+      "text": "Спиннинг Shimano Vengeance AX Tele 3.0m 40-80g",
+      "price": "1170"
+    }
+  ],
+  "baskets": [
+    {
+      "id": 1,
+      "name": "Спиннинг",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18215110_52733553tmb.jpg",
+      "text": "Favorite X1",
+      "price": "265"
+    },
+    {
+      "id": 5,
+      "name": "Леска",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
+      "text": "Varivas Rock Fish Premium 150m",
+      "price": "55"
+    }
+  ]
+}

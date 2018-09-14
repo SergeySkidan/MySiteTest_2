@@ -1,0 +1,6 @@
+.about_us{
+  text-align: center;
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
