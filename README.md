@@ -2,17 +2,10 @@ MySiteTest_2
 
 
 
-npm install --save react-router-dom
+1) npm install --save react-router-dom
 
-Start:
-1)Go to folder-
+2) cd MySiteTest_2\my-app
 
-cd MySiteTest_2\my-app
+3) yarn start
 
-2)Start:
-
-yarn start
-
-3)Start json-server:
-
-json-server --watch Data\db.json --port 3001
+4) json-server --watch Data\db.json --port 3001
