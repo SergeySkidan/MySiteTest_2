@@ -9,12 +9,12 @@ import { BrowserRouter } from 'react-router-dom';
 export const FishingGear = ({ match }) => (
   <div>
      <ul>
-        <li><Link to="/fishingGear/spinning">Удочки</Link></li>
-        <li><Link to="/fishingGear/coil">Катушки</Link></li>
-        <li><Link to="/fishingGear/line">Леска</Link></li>
-        <li><Link to="/fishingGear/cage">Садки, подсаки</Link></li>
-        <li><Link to="/fishingGear/bickStrikeAlarms">Сигнализаторы поклевки</Link></li>
-        <li><Link to="/fishingGear/racksAndStands">Стойки и подставки</Link></li>
+        <li><Link to="/fishingGear/spinning" id="Link"><img src="https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18168230_52704554tmb.jpg" width="100" height="100"/>Удочки</Link></li>
+        <li><Link to="/fishingGear/coil"><img src="https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18082171_52595794tmb.jpg" width="100" height="100"/>Катушки</Link></li>
+        <li><Link to="/fishingGear/line"><img src="https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18215930_52746351tmb.jpg" width="100" height="100"/>Леска</Link></li>
+        <li><Link to="/fishingGear/cage"><img src="https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17911881_52597861tmb.jpg" width="100" height="100"/>Садки, подсаки</Link></li>
+        <li><Link to="/fishingGear/bickStrikeAlarms"><img src="https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18214402_52714277tmb.jpg" width="100" height="100"/>Сигнализаторы поклевки</Link></li>
+        <li><Link to="/fishingGear/racksAndStands"><img src="https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17948621_52597648tmb.jpg" width="100" height="100"/>Стойки и подставки</Link></li>
     </ul>
   </div>
 );

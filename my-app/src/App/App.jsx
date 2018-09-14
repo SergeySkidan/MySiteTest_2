@@ -69,19 +69,15 @@ class App extends React.Component {
 
             </header>
 
-            <main id="content" className="main-content">
+        <main id="content" className="main-content">
 
-            <ul>
+            <ul  className="drop_vert_menu">
               <li><Link to="/">Главная</Link></li>
               <li><Link to="/fishingGear">Рыболовные снасти</Link></li>
               <li><Link to="/equipment">Оснащение</Link></li>
               <li><Link to="/baits">Приманки</Link></li>
               <li><Link to="/accessories">Аксессуары</Link></li>
             </ul>
-
-
-
-
 
                 <h4 className="h6-animation">НА ХВОСТЕ Юрия Скользнева. Ловля фидером с лодки. Сорокошичи.</h4>
                 <iframe width="350" height="200" src="https://www.youtube.com/embed/my0GAYs0XmY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -94,7 +90,6 @@ class App extends React.Component {
                 <p><img src='https://ibis.net.ua/images/promo/2713_ru.jpg?v=1533129106' width="350" height="200" alt="Пример"/></p>
                 <p><img src='https://ibis.net.ua/images/promo/2703_ru.jpg?v=1531407503' width="350" height="200" alt="Пример"/></p>
 
-
                 <h4 className="h6-animation">Чемпионат Украины по ловле хищной рыбы спиннингом с берега 2018</h4>
                 <p><a href="http://fsfu.org.ua/novyny/147-chempionat-ukrainy-po-lovle-khishchnoj-ryby-spinningom-s-berega-2018">
                    <img src="http://fsfu.org.ua/images/stories/Bereg/Chemp2018/_DSC0530.jpg" width="350" height="200" alt="Пример"/></a></p>
@@ -105,7 +100,7 @@ class App extends React.Component {
                 <p><a href="http://fishexpo.com.ua/">
                    <img src="http://fishexpo.com.ua/wp-content/uploads/2018/03/главное-фото-1000.jpg" width="350" height="200" alt="Пример"/></a></p>
 
-                </main>
+        </main>
 
                 <aside className="primary-aside">
                   <Route path="/" exact component={Home}/>
@@ -118,14 +113,16 @@ class App extends React.Component {
                     <Route path="/login" component={LoginPage}/>
                     <Route path="/register" component={RegisterPage}/>
 
-                    <Route path="/fishingGear" component={FishingGear}/>
-                    <Route path="/equipment" component={Equipment}/>
-                    <Route path="/baits" component={Baits}/>
-                    <Route path="/accessories" component={Accessories}/>
+                  <ul  className="aside_menu">
+                    <li className="fishingGear"><Route path="/fishingGear"  component={FishingGear}/></li>
+                    <li className="equipment"><Route path="/equipment" component={Equipment}/></li>
+                    <li className="baits"><Route path="/baits" component={Baits}/></li>
+                    <li className="fishingGear"><Route path="/accessories" component={Accessories}/></li>
+                  </ul>
 
                   <Route exact path="/fishingGear/spinning" component={ProductListContainer}/>
                   <Route path="/fishingGear/coil" component={() => (<div> катушка </div>)}/>
-                  <Route path="/fishingGear/line" component={LeskaListContainer}/>
+                  <Route path="/fishingGear/line" component={ProductListContainer}/>
                   <Route path="/fishingGear/cage" component={() => (<div> Садки, подсаки </div>)}/>
                   <Route path="/fishingGear/bickStrikeAlarms" component={() => (<div> Сигнализаторы поклевки </div>)}/>
                   <Route path="/fishingGear/racksAndStands" component={() => (<div> Стойки и подставки </div>)}/>
