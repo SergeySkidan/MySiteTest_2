@@ -12,7 +12,7 @@
 .primary-aside,
 .twin,
 .footer {
-	padding: 1em 2em;
+	padding: 10px 10px;
 }
 
 .main-content {
@@ -55,9 +55,6 @@
 	border-bottom: 1px solid white;
 }
 
-/*--------------------------------------------------------------
-If no grid support, limit width to 50em and center align
---------------------------------------------------------------*/
 @supports not (display: grid) {
 	.app {
 		max-width: 50em;
@@ -65,9 +62,7 @@ If no grid support, limit width to 50em and center align
 	}
 }
 
-/*--------------------------------------------------------------
-CSS Grid layout for wider screens, when browser supports grid:
---------------------------------------------------------------*/
+
 
 @media screen and (min-width: 600px) {
 	@supports (display: grid) {
@@ -180,4 +175,12 @@ CSS Grid layout for wider screens, when browser supports grid:
 .h6-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.aside_menu {
+
+
+
+
+
 }

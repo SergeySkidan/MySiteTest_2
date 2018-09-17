@@ -5,12 +5,9 @@ import './NavBar.css';
 
 class NavBar extends React.Component {
   render() {
-
     return (
-
       <nav>
              	<ul>
-
              		<li><Link to="/" activeClassName="active">Главная</Link></li>
 
              		<li><a href="#">Каталог товаров</a>
@@ -18,54 +15,54 @@ class NavBar extends React.Component {
 
              				<li><a href="#">Рыболовные снасти</a>
              					<ul>
-                        <li><Link to="/" activeClassName="active">Удилища</Link></li>
-                        <li><Link to="/users" activeClassName="active">Катушки</Link></li>
-                        <li><Link to="/leskas" activeClassName="active">Лески и шнуры</Link></li>
-                        <li><Link to="/Садок" activeClassName="active">Садки, подсаки</Link></li>
-                        <li><Link to="/Сигнализаторы" activeClassName="active">Сигнализаторы поклевки</Link></li>
-                        <li><Link to="/Стойки" activeClassName="active">Стойки и подставки</Link></li>
+                        <li><Link to="/fishingGear/spinning" className ="Links" id = "спиннинг"><img src="https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18168230_52704554tmb.jpg" width="100" height="100"/>Удочки</Link></li>
+                        <li><Link to="/fishingGear/coil" className ="Links" id = "катушка"><img src="https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18082171_52595794tmb.jpg" width="100" height="100"/>Катушки</Link></li>
+                        <li><Link to="/fishingGear/line" className ="Links" id = "леска"><img src="https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18215930_52746351tmb.jpg" width="100" height="100"/>Леска</Link></li>
+                        <li><Link to="/fishingGear/cage" className ="Links" id = "садок"><img src="https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17911881_52597861tmb.jpg" width="100" height="100"/>Садки, подсаки</Link></li>
+                        <li><Link to="/fishingGear/bickStrikeAlarms" className ="Links" id = "сигнализатор"><img src="https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18214402_52714277tmb.jpg" width="100" height="100"/>Сигнализаторы поклевки</Link></li>
+                        <li><Link to="/fishingGear/racksAndStands" className ="Links" id = "стойка"><img src="https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17948621_52597648tmb.jpg" width="100" height="100"/>Стойки и подставки</Link></li>
              					</ul>
              				</li>
 
              				<li><a href="#">Оснащение</a>
                       <ul>
-                        <li><a href="#">Крючки</a></li>
-                        <li><a href="#">Грузила</a></li>
-                        <li><a href="#">Джиг-головки</a></li>
-                        <li><a href="#">Кормушки</a></li>
-                        <li><a href="#">Поплавки</a></li>
-                        <li><a href="#">Карабины</a></li>
-                        <li><a href="#">Застежки</a></li>
-                        <li><a href="#">Вертлюжки</a></li>
-                        <li><a href="#">Заводные кольца</a></li>
-                        <li><a href="#">Поводки</a></li>
+                        <li><Link to="/equipment/hooks" className ="Links" id = "крючок">Крючки</Link></li>
+                        <li><Link to="/equipment/sinker" className ="Links" id = "грузило">Грузила</Link></li>
+                        <li><Link to="/equipment/jigHeads" className ="Links" id = "джиг">Джиг-головки</Link></li>
+                        <li><Link to="/equipment/feeders" className ="Links" id = "кормушка">Кормушки</Link></li>
+                        <li><Link to="/equipment/floats" className ="Links" id = "поплавок">Поплавки</Link></li>
+                        <li><Link to="/equipment/carbines" className ="Links" id = "карабин">Карабины</Link></li>
+                        <li><Link to="/equipment/fasteners" className ="Links" id = "застежка">Застежки</Link></li>
+                        <li><Link to="/equipment/swivels" className ="Links" id = "вертлюжок">Вертлюжки</Link></li>
+                        <li><Link to="/equipment/clockworkRings" className ="Links" id = "кольцо">Заводные кольца</Link></li>
+                        <li><Link to="/equipment/leads" className ="Links" id = "поводок">Поводки</Link></li>
                       </ul>
                   </li>
 
              				<li><a href="#">Приманки и прикормки</a>
                       <ul>
-                        <li><a href="#">Блесна</a></li>
-                        <li><a href="#">Мормышки</a></li>
-                        <li><a href="#">Балансиры</a></li>
-                        <li><a href="#">Воблеры</a></li>
-                        <li><a href="#">Силикон</a></li>
-                        <li><a href="#">Насадки</a></li>
-                        <li><a href="#">Прикормка</a></li>
-                        <li><a href="#">Добавки</a></li>
-                        <li><a href="#">Аттрактанты</a></li>
-                        <li><a href="#">Спреи</a></li>
+                        <li><Link to="/baits/spoon" className ="Links" id = "блесна">Блесна</Link></li>
+                        <li><Link to="/baits/mormyshki" className ="Links" id = "мормышка">Мормышки</Link></li>
+                        <li><Link to="/baits/balancer" className ="Links" id = "балансир">Балансиры</Link></li>
+                        <li><Link to="/baits/wobblers" className ="Links" id = "воблер">Воблеры</Link></li>
+                        <li><Link to="/baits/silicone" className ="Links" id = "силикон">Силикон</Link></li>
+                        <li><Link to="/baits/nozzles" className ="Links" id = "насадка">Насадки</Link></li>
+                        <li><Link to="/baits/lure" className ="Links" id = "прикормка">Прикормка</Link></li>
+                        <li><Link to="/baits/additives" className ="Links" id = "добавка">Добавки</Link></li>
+                        <li><Link to="/baits/attractants" className ="Links" id = "аттрактант">Аттрактанты</Link></li>
+                        <li><Link to="/baits/sprays" className ="Links" id = "спрей">Спреи</Link></li>
                       </ul>
                   </li>
 
              				<li><a href="#">Рыболовные аксессуары</a>
              					<ul>
-                      	<li><a href="#">Надувные лодки</a></li>
-             						<li><a href="#">Подвесные двигатели</a></li>
-             						<li><a href="#">Эхолоты</a></li>
-             						<li><a href="#">Карповые кораблики</a></li>
-             						<li><a href="#">Карповые маты и мешки</a></li>
-             						<li><a href="#">Кобры, ракеты</a></li>
-             						<li><a href="#">Рогатки и катапульты</a></li>
+                        <li><Link to="/accessories/inflatableBoat" className ="Links" id = "лодка">Надувные лодки</Link></li>
+                        <li><Link to="/accessories/pendantMotors" className ="Links" id = "двигатель">Подвесные двигатели</Link></li>
+                        <li><Link to="/accessories/echoSounders" className ="Links" id = "эхолот">Эхолоты</Link></li>
+                        <li><Link to="/accessories/carpBoats" className ="Links" id = "кораблик">Карповые кораблики</Link></li>
+                        <li><Link to="/accessories/carpMats" className ="Links" id = "мат">Карповые маты и мешки</Link></li>
+                        <li><Link to="/accessories/cobras" className ="Links" id = "кобра">Кобры, ракеты</Link></li>
+                        <li><Link to="/accessories/slingshots" className ="Links" id = "рогатка">Рогатки и катапульты</Link></li>
              					</ul>
              			</li>
 

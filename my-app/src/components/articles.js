@@ -9,7 +9,7 @@ class Articles extends React.Component {
       <div className="articles">
       <h2>Техника работы с приманками. Как поймать на тонущий минноу</h2>
 <div>
-<img src='https://ibis.net.ua/content/textimages/IM/statti/.thumbs/72dc6e5d6442ec475d397e45f16cee5b_1024_0_0.jpg' width="700" height="500" alt="Пример"/>
+<img src='https://ibis.net.ua/content/textimages/IM/statti/.thumbs/72dc6e5d6442ec475d397e45f16cee5b_1024_0_0.jpg' width="800" height="600" alt="Пример"/>
 </div>
 <em>
   Автор: Швец А.

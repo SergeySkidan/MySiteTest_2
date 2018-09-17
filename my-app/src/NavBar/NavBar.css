@@ -72,9 +72,14 @@ nav ul ul li a:hover {
         text-align: center;
       }
 
-      nav ul ul li a:active{
+nav ul ul li a:active{
+  box-shadow:
+  0 2px 1px rgba(0, 0, 0, .5),
+  -3px 0 1px -3px rgba(0, 0, 0, .8),
+  3px 0 1px -3px rgba(0, 0, 0, .8),
+  0 0 1px rgba(0, 0, 0, .5) inset;
+}
 
-      }
 nav ul ul ul {
   position: relative;
   left: 100%;

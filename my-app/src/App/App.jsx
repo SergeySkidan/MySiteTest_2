@@ -38,7 +38,6 @@ import {Accessories} from '../constants';
 import './App.css';
 
 
-
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -63,10 +62,8 @@ class App extends React.Component {
             }
 
             <header className="primary-header">
-
               <NavBar/>
               <TitleDialog/>
-
             </header>
 
         <main id="content" className="main-content">
@@ -112,6 +109,7 @@ class App extends React.Component {
                     <PrivateRoute exact path="/accountPage" component={AccountPage} />
                     <Route path="/login" component={LoginPage}/>
                     <Route path="/register" component={RegisterPage}/>
+
 
                   <ul  className="aside_menu">
                     <li className="fishingGear"><Route path="/fishingGear"  component={FishingGear}/></li>

@@ -32,13 +32,8 @@ var cauntBasket = JSON.parse(localStorage.getItem("BasketList")||"[]");
 document.getElementById('cauntAddToCart').innerHTML = cauntBasket.length;
 }
   render() {
-
     var product = this.props.product;
-  
-
-
-
-    return (<div className='product-list'>
+      return (<div className='product-list'>
       <h4 className='product__title'>{this.props.product.name}</h4>
       <img src={this.props.product.image} alt={this.props.product.name} className='product__image'/>
       <div className='product__tips'>Модель:{this.props.product.text}</div>
