@@ -10,7 +10,7 @@ export function getProducts() {
     });
 }
 
-export function searchProducts(query = '') {
+export function searchProducts(query) {
   return axios.get('http://localhost:3001/products?q='+ query)
     .then(response => {
       store.dispatch(getProductsSuccess(response.data));

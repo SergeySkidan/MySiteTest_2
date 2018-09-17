@@ -4,28 +4,28 @@
       "id": 1,
       "name": "Леска",
       "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
-      "text": "Varivas Rock Fish ",
-      "price": "55"
+      "text": "Шнур Varivas New Avani Jigging 10x10 Max Power PE 400m",
+      "price": "1510"
     },
     {
       "id": 2,
       "name": "Леска",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
-      "text": "Varivas Rock Fish ",
-      "price": "55"
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216534_52716149tmb.jpg",
+      "text": "Шнур Varivas High Grade PE (жёлтый) 150m #0.6/0.128mm",
+      "price": "504"
     },
     {
       "id": 3,
       "name": "Леска",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
-      "text": "Varivas Rock Fish ",
-      "price": "55"
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18197183_52667922tmb.jpg",
+      "text": "Леска Brain Feeder 300 m 0,26 mm #2.5 ",
+      "price": "350"
     },
     {
       "id": 5,
       "name": "Спиннинг",
       "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18215110_52733553tmb.jpg",
-      "text": "Favorite X1",
+      "text": "Favorite X1 DX 240H 2.4m 20-50g",
       "price": "265"
     },
     {
@@ -55,96 +55,293 @@
       "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18168230_52704554tmb.jpg",
       "text": "Спиннинг Shimano Vengeance AX Tele 3.0m 40-80g",
       "price": "1170"
-    }
-  ],
-  "leskas": [
-    {
-      "id": 2,
-      "name": "Леска",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
-      "text": "Varivas Rock Fish Premium 150m",
-      "price": "55"
     },
     {
-      "id": 3,
-      "name": "Леска",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
-      "text": "Varivas Rock Fish Premium 150m",
-      "price": "55"
+      "id": 10,
+      "name": "Садок",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18197200_52656566tmb.jpg",
+      "text": "Садок Brain keeping net 40*50cm",
+      "price": "656"
     },
     {
-      "id": 4,
-      "name": "Леска",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
-      "text": "Varivas Rock Fish Premium 150m",
-      "price": "55"
+      "id": 11,
+      "name": "Садок",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17911881_52597861tmb.jpg",
+      "text": "Подсак Prologic Firestarter Landing Net 42",
+      "price": "1030"
     },
     {
-      "id": 5,
-      "name": "Леска",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
-      "text": "Varivas Rock Fish Premium 150m",
-      "price": "55"
+      "id": 12,
+      "name": "Сигнализатор",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17925661_52597921tmb.jpg",
+      "text": "Набор сигнализаторов Prologic SNZ Bite Alarm Kit 4+1",
+      "price": "6170"
     },
     {
-      "id": 6,
-      "name": "Леска",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
-      "text": "Varivas Rock Fish Premium 150m",
-      "price": "55"
-    }
-  ],
-  "spinning": [
-    {
-      "id": 1,
-      "name": "Спиннинг",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18215110_52733553tmb.jpg",
-      "text": "Favorite X1",
-      "price": "265"
+      "id": 13,
+      "name": "Сигнализатор",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18235051_52759883tmb.jpg",
+      "text": "Набор сигнализаторов Prologic BAT+ Bite Alarm Set 4+1",
+      "price": "3730"
     },
     {
-      "id": 2,
-      "name": "Спиннинг",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18237302_52763370tmb.jpg",
-      "text": "Спиннинг Shimano Alivio DX 240H 2.4m 20-50g",
-      "price": "982"
+      "id": 14,
+      "name": "Катушка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18234028_52752470tmb.jpg",
+      "text": "Катушка Daiwa  Black 4000",
+      "price": "8220"
     },
     {
-      "id": 3,
-      "name": "Спиннинг",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18237125_52763604tmb.jpg",
-      "text": "Спиннинг Shimano Vengeance AX Tele 3.3m 40-80g",
-      "price": "1340"
+      "id": 15,
+      "name": "Катушка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18234019_52752597tmb.jpg",
+      "text": "Катушка Daiwa 17 Theory",
+      "price": "10170"
     },
     {
-      "id": 4,
-      "name": "Спиннинг",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18237152_52758550tmb.jpg",
-      "text": "Спиннинг Shimano Catana EX Telespin 21L 2.1m 3-14g",
-      "price": "1310"
+      "id": 16,
+      "name": "Катушка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18200153_52733459tmb.jpg",
+      "text": "Катушка Favorite Arena 1500S",
+      "price": "2650"
     },
     {
-      "id": 5,
-      "name": "Спиннинг",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18168230_52704554tmb.jpg",
-      "text": "Спиннинг Shimano Vengeance AX Tele 3.0m 40-80g",
-      "price": "1170"
-    }
-  ],
-  "baskets": [
-    {
-      "id": 1,
-      "name": "Спиннинг",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18215110_52733553tmb.jpg",
-      "text": "Favorite X1",
-      "price": "265"
+      "id": 17,
+      "name": "Стойка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17948621_52597648tmb.jpg",
+      "text": "Род-под Prologic Quad-Rex 4 Rods",
+      "price": "4660"
     },
     {
-      "id": 5,
-      "name": "Леска",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216449_52716064tmb.jpg",
-      "text": "Varivas Rock Fish Premium 150m",
-      "price": "55"
+      "id": 18,
+      "name": "Стойка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18215329_52714300tmb.jpg",
+      "text": "Род-под Prologic Lux Pod 4 Rod",
+      "price": "3010"
+    },
+    {
+      "id": 19,
+      "name": "Крючок",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18223783_52732003tmb.jpg",
+      "text": "Крючок Fudo Koaji Round BN №10",
+      "price": "40"
+    },
+    {
+      "id": 20,
+      "name": "Крючок",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18226702_52751990tmb.jpg",
+      "text": "Крючок Brain F1 Champ 10,10 шт/уп",
+      "price": "57"
+    },
+    {
+      "id": 21,
+      "name": "Грузило",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18008991_52656638tmb.jpg",
+      "text": "Грузило Brain Гриппа 100 гр карповое",
+      "price": "24,5"
+    },
+    {
+      "id": 22,
+      "name": "Грузило",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18009041_52656568tmb.jpg",
+      "text": "Грузило Brain Элеватор 120 гр. карповое",
+      "price": "18"
+    },
+    {
+      "id": 23,
+      "name": "Джиг головка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18201316_52670686tmb.jpg",
+      "text": "Джиг головка Knapek Area Jig Head J #8 0.5г Silver",
+      "price": "18"
+    },
+    {
+      "id": 24,
+      "name": "Джиг головка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17935191_52683197tmb.jpg",
+      "text": "Джиг головка Knapek Area Jig Head N #4 0.6г Gold",
+      "price": "18"
+    },
+    {
+      "id": 25,
+      "name": "Кормушка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18215587_52714586tmb.jpg",
+      "text": "Кормушка Brain фидерная L крашенная (ц.:черный) 40 гр",
+      "price": "17"
+    },
+    {
+      "id": 26,
+      "name": "Кормушка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18239262_52763056tmb.jpg",
+      "text": "Кормушка Brain фидерная M 5x14 ячеек крашенная (ц.:черный) 90g",
+      "price": "32"
+    },
+    {
+      "id": 27,
+      "name": "Поплавок",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216127_52725360tmb.jpg",
+      "text": "Поплавок Brain BF21",
+      "price": "21"
+    },
+    {
+      "id": 28,
+      "name": "Поплавок",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18216142_52725375tmb.jpg",
+      "text": "Поплавок Brain BF25",
+      "price": "25,5"
+    },
+    {
+      "id": 29,
+      "name": "Карабин",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17777043_52608070tmb.jpg",
+      "text": "Крепление глухое с караби Stonfo",
+      "price": "56"
+    },
+    {
+      "id": 30,
+      "name": "Застежка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18098424_52612868tmb.jpg",
+      "text": "Застежка Select SF112",
+      "price": "14,3"
+    },
+    {
+      "id": 31,
+      "name": "Вертлюжок",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18098471_52610504tmb.jpg",
+      "text": "Вертлюжок с застежкой Select SF0037",
+      "price": "13,2"
+    },
+    {
+      "id": 32,
+      "name": "Кольцо",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17979051_52597220tmb.jpg",
+      "text": "Кольцо заводное Decoy Split Ring 9, 200lb, 10 шт.",
+      "price": "123"
+    },
+    {
+      "id": 33,
+      "name": "Поводок",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17844151_52745102tmb.jpg",
+      "text": "Поводок UKRSPIN плетеный 1x7 15см 7кг (2шт/упак)",
+      "price": "16"
+    },
+    {
+      "id": 34,
+      "name": "Блесна",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17958721_52612193tmb.jpg",
+      "text": "Блесна SV Fishing Area Glisser 2,0g",
+      "price": "87"
+    },
+    {
+      "id": 35,
+      "name": "Мормышка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17982251_52674196tmb.jpg",
+      "text": "Мормышка вольфрамовая Shark Круглокапля с с отверстием",
+      "price": "23"
+    },
+    {
+      "id": 36,
+      "name": "Балансир",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17804821_52592880tmb.jpg",
+      "text": "Балансир Jackall PyunPyun Jig 45мм 6,5г",
+      "price": "262"
+    },
+    {
+      "id": 37,
+      "name": "Воблер",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18240516_52767089tmb.jpg",
+      "text": "Воблер Jackall 220SF 102.0g",
+      "price": "1370"
+    },
+    {
+      "id": 38,
+      "name": "Силикон",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18194861_52668689tmb.jpg",
+      "text": "Силикон Lucky John S-Shad 5,2/T09*5",
+      "price": "31,5"
+    },
+    {
+      "id": 39,
+      "name": "Насадка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18242693_52771086tmb.jpg",
+      "text": "Бойлы Richworth Original KG1 20mm 1kg",
+      "price": "403"
+    },
+    {
+      "id": 40,
+      "name": "Прикормка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18161769_52628807tmb.jpg",
+      "text": "Прикормка Fish Dream Club Лещ+ 0.8кг",
+      "price": "35"
+    },
+    {
+      "id": 41,
+      "name": "Добавка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18242361_52770694tmb.jpg",
+      "text": "Добавка CC Moore Pure Liver Powder 50g",
+      "price": "195"
+    },
+    {
+      "id": 42,
+      "name": "Аттрактант",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18217474_52717872tmb.jpg",
+      "text": "Аттрактант CarpZoom Carp Colour Coctail 75мл (ананас кальмар)",
+      "price": "129"
+    },
+    {
+      "id": 43,
+      "name": "Спрей",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18237716_52763194tmb.jpg",
+      "text": "Спрей Brain F1 Pickle Plum (слива с чесноком) 50ml",
+      "price": "49,5"
+    },
+    {
+      "id": 44,
+      "name": "Лодка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18196493_52694150tmb.jpg",
+      "text": "Лодка Aqua Storm ST 249см",
+      "price": "4320"
+    },
+    {
+      "id": 45,
+      "name": "Двигатель",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18017611_52677016tmb.jpg",
+      "text": "Мотор Parsun 4х-тактный F5 BMS",
+      "price": "28000"
+    },
+    {
+      "id": 46,
+      "name": "Эхолот",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18218441_52719587tmb.jpg",
+      "text": "Эхолот Garmin EchoMAP CHIRP 52dv с GPS навигатором",
+      "price": "15570"
+    },
+    {
+      "id": 47,
+      "name": "Кораблик",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17942321_52599798tmb.jpg",
+      "text": "Корабль Carpboat Mini carbon + эхолот FD-500",
+      "price": "24940"
+    },
+    {
+      "id": 48,
+      "name": "Мат",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18235035_52753652tmb.jpg",
+      "text": "Карповый мат Brain Combi Unhooking Mat- Weigh Sling HYM021",
+      "price": "1450"
+    },
+    {
+      "id": 49,
+      "name": "Кобра",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17910761_52598020tmb.jpg",
+      "text": "Кобра Prologic Carbolite Throwing Stick карбоновая в тубусе",
+      "price": "1850"
+    },
+    {
+      "id": 50,
+      "name": "Рогатка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18239903_52765028tmb.jpg",
+      "text": "Рогатка Stonfo Fionda Maxi 3",
+      "price": "413"
     }
   ]
 }

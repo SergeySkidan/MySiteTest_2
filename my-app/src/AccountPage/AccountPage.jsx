@@ -5,6 +5,54 @@ import { connect } from 'react-redux';
 import { userActions } from '../actions';
 
 class AccountPage extends React.Component {
+  constructor(props) {
+    super(props);
+       this.state = {
+          newProduct: {
+              id: '',
+              name: '',
+              image: '',
+              text: '',
+              price: ''
+          }
+        }
+    this.handleInput = this.handleInput.bind(this);
+    this.handleAddProduct = this.handleAddProduct.bind(this);
+  }
+  handleInput(key, e) {
+    var state = Object.assign({}, this.state.newProduct);
+    state[key] = e.target.value;
+    this.setState({newProduct: state });
+  }
+  
+  handleAddProduct(e) {
+    e.preventDefault();
+
+    const { product } = this.state.newProduct;
+    alert(this.state.newProduct);
+  //product.id = Number(product.id);
+  //  product.price = Number(product.price);
+
+   fetch( 'http://localhost:3001/products', {
+       method:'post',
+       headers: {
+         'Accept': 'application/json',
+         'Content-Type': 'application/json'
+       },
+       body: JSON.stringify(product)
+   })
+   .then(response => {
+       return response.json();
+   })
+   .then( data => {
+       this.setState((prevState)=> ({
+           products: prevState.products.concat(data),
+           currentProduct : data
+       }))
+   })
+ }
+
+
     componentDidMount() {
         this.props.dispatch(userActions.getAll());
     }
@@ -14,6 +62,7 @@ class AccountPage extends React.Component {
     }
 
     render() {
+
         const { user, users } = this.props;
         return (
             <div className="col-md-6 col-md-offset-3">
@@ -38,7 +87,40 @@ class AccountPage extends React.Component {
                 <p>
                     <Link to="/login">Выйти</Link>
                 </p>
+
+
+
+            <div>
+              <h2> Добавить продукт </h2>
+                <form onSubmit={this.handleAddProduct}>
+                <label> Id:
+                 <input type="text" onChange={(e)=>this.handleInput('id',e)} />
+                </label>
+
+                <label> Name:
+                  <input type="text" onChange={(e)=>this.handleInput('name',e)} />
+                </label>
+
+                <label> Image:
+                  <input type="const url = require('url');" onChange={(e)=>this.handleInput('image',e)} />
+                </label>
+
+                <label> Text:
+                  <input type="text" onChange={(e)=>this.handleInput('text',e)} />
+                </label>
+
+                <label> Price:
+                  <input type="text" onChange={(e)=>this.handleInput('price',e)} />
+                </label>
+                <input type="submit" value="Submit" />
+              </form>
             </div>
+
+
+          </div>
+
+
+
         );
     }
 }

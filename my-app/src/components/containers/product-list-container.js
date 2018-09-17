@@ -8,14 +8,21 @@ import { loadSearchLayout } from '../../actions/search-layout-actions';
 export class ProductListContainer extends React.Component{
 
   componentDidMount = () => {
-    productApi.getProducts();
-    this.props.dispatch(loadSearchLayout('products', 'Product Results'));
+    var queryProducts ='';
+    var inputs = document.getElementsByClassName("Links");
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].addEventListener("click", filterProductsByClick);
+    }
+
+  function filterProductsByClick() {
+        queryProducts = this.id;
+        productApi.searchProducts(queryProducts);
+    }
+      this.props.dispatch(loadSearchLayout('products', 'Product Results'));
   }
 
   render() {
-
     return (
-
       <ProductList products={this.props.products}/>
     );
   }

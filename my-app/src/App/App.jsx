@@ -121,41 +121,41 @@ class App extends React.Component {
                   </ul>
 
                   <Route exact path="/fishingGear/spinning" component={ProductListContainer}/>
-                  <Route path="/fishingGear/coil" component={() => (<div> катушка </div>)}/>
-                  <Route path="/fishingGear/line" component={ProductListContainer}/>
-                  <Route path="/fishingGear/cage" component={() => (<div> Садки, подсаки </div>)}/>
-                  <Route path="/fishingGear/bickStrikeAlarms" component={() => (<div> Сигнализаторы поклевки </div>)}/>
-                  <Route path="/fishingGear/racksAndStands" component={() => (<div> Стойки и подставки </div>)}/>
+                  <Route path="/fishingGear/coil"  component={ProductListContainer}/>
+                  <Route path="/fishingGear/line"  component={ProductListContainer}/>
+                  <Route path="/fishingGear/cage" component={ProductListContainer}/>
+                  <Route path="/fishingGear/bickStrikeAlarms" component={ProductListContainer}/>
+                  <Route path="/fishingGear/racksAndStands" component={ProductListContainer}/>
 
-                  <Route exact path="/equipment/hooks" render={() => (<div> Крючки</div>)}/>
-                  <Route path="/equipment/sinker" component={() => (<div> Грузила </div>)}/>
-                  <Route path="/equipment/jigHeads" component={() => (<div> Джиг-головки </div>)}/>
-                  <Route path="/equipment/feeders" component={() => (<div> Кормушки </div>)}/>
-                  <Route path="/equipment/floats" component={() => (<div> Поплавки </div>)}/>
-                  <Route path="/equipment/carbines" component={() => (<div> Карабины </div>)}/>
-                  <Route path="/equipment/fasteners" component={() => (<div> Застежки </div>)}/>
-                  <Route path="/equipment/swivels" component={() => (<div> Вертлюжки </div>)}/>
-                  <Route path="/equipment/clockworkRings" component={() => (<div> Заводные кольца </div>)}/>
-                  <Route path="/equipment/leads" component={() => (<div> Поводки </div>)}/>
+                  <Route exact path="/equipment/hooks" component={ProductListContainer}/>
+                  <Route path="/equipment/sinker" component={ProductListContainer}/>
+                  <Route path="/equipment/jigHeads" component={ProductListContainer}/>
+                  <Route path="/equipment/feeders" component={ProductListContainer}/>
+                  <Route path="/equipment/floats" component={ProductListContainer}/>
+                  <Route path="/equipment/carbines" component={ProductListContainer}/>
+                  <Route path="/equipment/fasteners" component={ProductListContainer}/>
+                  <Route path="/equipment/swivels" component={ProductListContainer}/>
+                  <Route path="/equipment/clockworkRings" component={ProductListContainer}/>
+                  <Route path="/equipment/leads" component={ProductListContainer}/>
 
-                  <Route exact path="/baits/spoon" render={() => (<div> Блесна </div>)}/>
-                  <Route path="/baits/mormyshki" component={() => (<div> Мормышки </div>)}/>
-                  <Route path="/baits/balancer" component={() => (<div> Балансиры </div>)}/>
-                  <Route path="/baits/wobblers" component={() => (<div> Воблеры </div>)}/>
-                  <Route path="/baits/silicone" component={() => (<div> Силикон </div>)}/>
-                  <Route path="/baits/nozzles" component={() => (<div> Насадки </div>)}/>
-                  <Route path="/baits/lure" component={() => (<div> Прикормка </div>)}/>
-                  <Route path="/baits/additives" component={() => (<div> Добавки </div>)}/>
-                  <Route path="/baits/attractants" component={() => (<div> Аттрактанты </div>)}/>
-                  <Route path="/baits/sprays" component={() => (<div> Спреи </div>)}/>
+                  <Route exact path="/baits/spoon" component={ProductListContainer}/>
+                  <Route path="/baits/mormyshki" component={ProductListContainer}/>
+                  <Route path="/baits/balancer" component={ProductListContainer}/>
+                  <Route path="/baits/wobblers" component={ProductListContainer}/>
+                  <Route path="/baits/silicone" component={ProductListContainer}/>
+                  <Route path="/baits/nozzles" component={ProductListContainer}/>
+                  <Route path="/baits/lure" component={ProductListContainer}/>
+                  <Route path="/baits/additives" component={ProductListContainer}/>
+                  <Route path="/baits/attractants" component={ProductListContainer}/>
+                  <Route path="/baits/sprays" component={ProductListContainer}/>
 
-                  <Route exact path="/accessories/inflatableBoat" render={() => (<div> Надувные лодки</div>)}/>
-                  <Route path="/accessories/pendantMotors" component={() => (<div> Подвесные двигатели </div>)}/>
-                  <Route path="/accessories/echoSounders" component={() => (<div> Эхолоты </div>)}/>
-                  <Route path="/accessories/carpBoats" component={() => (<div> Карповые кораблики </div>)}/>
-                  <Route path="/accessories/carpMats" component={() => (<div> Карповые маты и мешки </div>)}/>
-                  <Route path="/accessories/cobras" component={() => (<div> Кобры, ракеты </div>)}/>
-                  <Route path="/accessories/slingshots" component={() => (<div> Рогатки и катапульты </div>)}/>
+                  <Route exact path="/accessories/inflatableBoat" component={ProductListContainer}/>
+                  <Route path="/accessories/pendantMotors" component={ProductListContainer}/>
+                  <Route path="/accessories/echoSounders" component={ProductListContainer}/>
+                  <Route path="/accessories/carpBoats" component={ProductListContainer}/>
+                  <Route path="/accessories/carpMats" component={ProductListContainer}/>
+                  <Route path="/accessories/cobras" component={ProductListContainer}/>
+                  <Route path="/accessories/slingshots" component={ProductListContainer}/>
                 </aside>
 
                 <aside className="twin">
