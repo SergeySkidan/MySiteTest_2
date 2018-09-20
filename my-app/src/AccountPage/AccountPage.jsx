@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import * as productApi from '../api/product-api';
 
 import { userActions } from '../actions';
 
@@ -8,50 +9,38 @@ class AccountPage extends React.Component {
   constructor(props) {
     super(props);
        this.state = {
-          newProduct: {
+          product: {
               id: '',
               name: '',
               image: '',
               text: '',
               price: ''
-          }
+          },
+          submitted: false
         }
-    this.handleInput = this.handleInput.bind(this);
-    this.handleAddProduct = this.handleAddProduct.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
-  handleInput(key, e) {
-    var state = Object.assign({}, this.state.newProduct);
-    state[key] = e.target.value;
-    this.setState({newProduct: state });
+  handleChange(event) {
+      const { name, value } = event.target;
+      const { product } = this.state;
+      this.setState({
+          product: {
+              ...product,
+              [name]: value
+          }
+      });
   }
-  
-  handleAddProduct(e) {
-    e.preventDefault();
 
-    const { product } = this.state.newProduct;
-    alert(this.state.newProduct);
-  //product.id = Number(product.id);
-  //  product.price = Number(product.price);
-
-   fetch( 'http://localhost:3001/products', {
-       method:'post',
-       headers: {
-         'Accept': 'application/json',
-         'Content-Type': 'application/json'
-       },
-       body: JSON.stringify(product)
-   })
-   .then(response => {
-       return response.json();
-   })
-   .then( data => {
-       this.setState((prevState)=> ({
-           products: prevState.products.concat(data),
-           currentProduct : data
-       }))
-   })
- }
-
+  handleSubmit(event) {
+      event.preventDefault();
+      this.setState({ submitted: true });
+      const { product } = this.state;
+      const { dispatch } = this.props;
+      if (product.id && product.name && product.image && product.text&& product.price) {
+          productApi.addProduct(product);
+      }
+  }
 
     componentDidMount() {
         this.props.dispatch(userActions.getAll());
@@ -62,8 +51,10 @@ class AccountPage extends React.Component {
     }
 
     render() {
+      const { addproduct  } = this.props;
+      const { product, submitted } = this.state;
 
-        const { user, users } = this.props;
+      const { user, users } = this.props;
         return (
             <div className="col-md-6 col-md-offset-3">
                 <h1>Вы вошли как: {user.firstName}!</h1>
@@ -88,42 +79,58 @@ class AccountPage extends React.Component {
                     <Link to="/login">Выйти</Link>
                 </p>
 
-
-
-            <div>
-              <h2> Добавить продукт </h2>
-                <form onSubmit={this.handleAddProduct}>
-                <label> Id:
-                 <input type="text" onChange={(e)=>this.handleInput('id',e)} />
-                </label>
-
-                <label> Name:
-                  <input type="text" onChange={(e)=>this.handleInput('name',e)} />
-                </label>
-
-                <label> Image:
-                  <input type="const url = require('url');" onChange={(e)=>this.handleInput('image',e)} />
-                </label>
-
-                <label> Text:
-                  <input type="text" onChange={(e)=>this.handleInput('text',e)} />
-                </label>
-
-                <label> Price:
-                  <input type="text" onChange={(e)=>this.handleInput('price',e)} />
-                </label>
-                <input type="submit" value="Submit" />
-              </form>
-            </div>
-
-
+                  <div className="col-md-6 col-md-offset-3">
+                      <h2>Добавить продукт</h2>
+                      <form name="form" onSubmit={this.handleSubmit}>
+                          <div className={'form-group' + (submitted && !product.id ? ' has-error' : '')}>
+                              <label htmlFor="id">Код продукта</label>
+                              <input type="text" className="form-control" name="id" value={product.id} onChange={this.handleChange} />
+                              {submitted && !product.id &&
+                                  <div className="help-block">Код продукта не введен</div>
+                              }
+                          </div>
+                          <div className={'form-group' + (submitted && !product.name ? ' has-error' : '')}>
+                              <label htmlFor="name">Группа товаров</label>
+                              <input type="text" className="form-control" name="name" value={product.name} onChange={this.handleChange} />
+                              {submitted && !product.name &&
+                                  <div className="help-block">Группа товаров не введена</div>
+                              }
+                          </div>
+                          <div className={'form-group' + (submitted && !product.image ? ' has-error' : '')}>
+                              <label htmlFor="image">Адресс фото</label>
+                              <input type="text" className="form-control" name="image" value={product.image} onChange={this.handleChange} />
+                              {submitted && !product.image &&
+                                  <div className="help-block">Адресс фото не добавлен</div>
+                              }
+                          </div>
+                          <div className={'form-group' + (submitted && !product.text ? ' has-error' : '')}>
+                              <label htmlFor="text">Описание</label>
+                              <input type="text" className="form-control" name="text" value={product.text} onChange={this.handleChange} />
+                              {submitted && !product.text &&
+                                  <div className="help-block">Описание не введено</div>
+                              }
+                          </div>
+                          <div className={'form-group' + (submitted && !product.price ? ' has-error' : '')}>
+                              <label htmlFor="price">Цена</label>
+                              <input type="price" className="form-control" name="price" value={product.price} onChange={this.handleChange} />
+                              {submitted && !product.price &&
+                                  <div className="help-block">Цена не введена</div>
+                              }
+                          </div>
+                          <div className="form-group">
+                              <button className="btn btn-primary">Добавить продукт</button>
+                              {addproduct &&
+                                  <img src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                              }
+                              <Link to="/login" className="btn btn-link">Отмена</Link>
+                          </div>
+                      </form>
+                  </div>
           </div>
-
-
-
         );
     }
 }
+
 
 function mapStateToProps(state) {
     const { users, authentication } = state;

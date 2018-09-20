@@ -3,7 +3,6 @@ import React from 'react';
 import './search-form.css';
 
 class SearchForm extends React.Component{
-
   getQuery =()=> {
     return this.refs.search.value;
   }
@@ -13,16 +12,11 @@ class SearchForm extends React.Component{
       <div>
       <form onSubmit={this.props.search} className="search">
         <input type="text"   ref="search" placeholder="Search" />
-
         <button>Search</button>
-
-
       </form>
       </div>
     );
   }
-
 };
-
 
 export default SearchForm;

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { store } from './../helpers';
-import { getProductsSuccess, deleteProductSuccess, putProductSuccess} from '../actions/product-actions';
+import { getProductsSuccess, deleteProductSuccess} from '../actions/product-actions';
 
 export function getProducts() {
   return axios.get('http://localhost:3001/products')
@@ -24,4 +24,18 @@ export function deleteProduct(productId) {
       store.dispatch(deleteProductSuccess(productId));
       return response;
     });
+}
+
+export function addProduct(product) {
+  axios({
+    method: 'post',
+    url: 'http://localhost:3001/products/',
+    data: {
+      id: product.id,
+      name: product.name,
+      image: product.image,
+      text: product.text,
+      price: product.price
+    }
+  });
 }

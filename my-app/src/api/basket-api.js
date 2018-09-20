@@ -1,43 +1,40 @@
 import axios from 'axios';
 import { store } from './../helpers';
-import { getBasketsSuccess, deleteBasketSuccess } from '../actions/basket-actions';
+import { getBasketsSuccess, deleteBasketSuccess, addBasketSuccess } from '../actions/basket-actions';
 
 
 export function getBaskets() {
-
-    localStorage.BasketList
-    var StorageList=JSON.parse(localStorage.getItem("BasketList")||"[]")
-//если корзина пуста
-        if(StorageList.length == 0){
-          StorageList =[];
-          }
-      return StorageList;
+ return axios.get('http://localhost:3001/baskets')
+  .then(response => {
+    store.dispatch(getBasketsSuccess(response.data));
+    return response;
+  });
 }
 
-export function deleteBasket() {
-//получаем localStorage.BasketList
-       localStorage.BasketList
-       var StorageList = JSON.parse(localStorage.getItem("BasketList")||"[]")
-//tempProps получает массив и в нулевом индексе объект
-       var tempProps = this.props.baskets;
-//достаем из массива объект
-       var tempBasket = tempProps[0];
-//ищем совпадения в листе с удаленным объектом и удаляем его из листа
-       for(var i = 0; i<StorageList.length; i++){
-       if(StorageList[i].id == tempBasket.id ){
-       StorageList.splice(i,1);
-       }
+export function deleteBasket(basketId) {
+
+  var productAddToCart = JSON.parse(localStorage.getItem("BasketList")||"[]")
+  productAddToCart = +productAddToCart - 1;
+  localStorage.setItem('BasketList', JSON.stringify(productAddToCart));
+  document.getElementById('cauntAddToCart').innerHTML = productAddToCart;
+
+  return axios.delete('http://localhost:3001/baskets/' + basketId)
+    .then(response => {
+      store.dispatch(deleteBasketSuccess(basketId));
+      return response;
+    });
+}
+
+export function addBasket(product) {
+  axios({
+    method: 'post',
+    url: 'http://localhost:3001/baskets/',
+    data: {
+      id: product.id,
+      name: product.name,
+      image: product.image,
+      text: product.text,
+      price: product.price
     }
-//ложим новый лист в localStorage.BasketList
-   localStorage.setItem('BasketList', JSON.stringify(StorageList));
-
-  // /* счетчик корзины */
-   localStorage.BasketList
-   var cauntBasket = JSON.parse(localStorage.getItem("BasketList")||"[]");
-   document.getElementById('cauntAddToCart').innerHTML = cauntBasket.length;
-
-   this.setState({baskets: true});
-
-
-
+  });
 }

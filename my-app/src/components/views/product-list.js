@@ -1,35 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import * as basketApi from '../../api/basket-api';
 
 import './product-list.css';
 
-const productAddToCart = [];
+
 localStorage.setItem('BasketList', JSON.stringify(""));
 
 class ProductItem extends React.Component {
 
 addToCart = (event) => {
-//получаем localStorage.BasketList
-  localStorage.BasketList
-  var StorageList = JSON.parse(localStorage.getItem("BasketList")||"[]")
-//добавляем к массиву productAddToCart объекты из StorageList для добавления в localStorage.BasketList
-//нового объекта и старых из localStorage.BasketList
-  for (var key in StorageList) {
-    productAddToCart.push(StorageList[key]);
-  }
-//получаем продукт
-  var tempLocalStorage = this.props.product;
-//ложим его в productAddToCart
-  productAddToCart.push(tempLocalStorage);
-//ложим все в localStorage.BasketList
-  localStorage.setItem('BasketList', JSON.stringify(productAddToCart));
-//очищаем productAddToCart
-  productAddToCart.length = 0;
+basketApi.addBasket(this.props.product);
 
-//счетчик корзины
-localStorage.BasketList
-var cauntBasket = JSON.parse(localStorage.getItem("BasketList")||"[]");
-document.getElementById('cauntAddToCart').innerHTML = cauntBasket.length;
+var productAddToCart = JSON.parse(localStorage.getItem("BasketList")||"[]")
+productAddToCart = +productAddToCart+1 ;
+localStorage.setItem('BasketList', JSON.stringify(productAddToCart));
+document.getElementById('cauntAddToCart').innerHTML = productAddToCart;
 }
   render() {
     var product = this.props.product;

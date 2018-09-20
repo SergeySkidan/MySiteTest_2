@@ -12,11 +12,6 @@ import { PrivateRoute } from '../components';
 import { AccountPage } from '../AccountPage';
 import { LoginPage } from '../LoginPage';
 import { RegisterPage } from '../RegisterPage';
-
-// Layouts
-import MainLayout from '../components/layouts/main-layout';
-import SearchLayoutContainer from '../components/containers/search-layout-container';
-
 // Pages
 import Home from '../components/home';
 import Report_18_08_18 from '../components/report_18_08_18';
@@ -24,7 +19,6 @@ import Articles from '../components/articles';
 import AboutUs from '../components/aboutUs';
 import BasketListContainer from '../components/containers/basket-list-container';
 import ProductListContainer from '../components/containers/product-list-container';
-import LeskaListContainer from '../components/containers/leska-list-container';
 
 import TitleDialog from '../TitleDialog/TitleDialog';
 import NavBar from '../NavBar/NavBar';
@@ -33,7 +27,6 @@ import {FishingGear} from '../constants';
 import {Equipment} from '../constants';
 import {Baits} from '../constants';
 import {Accessories} from '../constants';
-
 
 import './App.css';
 
@@ -44,14 +37,13 @@ class App extends React.Component {
 
         const { dispatch } = this.props;
         history.listen((location, action) => {
-        // clear alert on location change
-            dispatch(alertActions.clear());
+        dispatch(alertActions.clear());
         });
     }
 
-    render() {
-        const { alert } = this.props;
-        return (
+render() {
+    const { alert } = this.props;
+    return (
 
 <Router history={history}>
 
@@ -169,13 +161,6 @@ class App extends React.Component {
                 </footer>
 
                 </div>
-
-
-
-
-
-
-
 </Router>
 
         );

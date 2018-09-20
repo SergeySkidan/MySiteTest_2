@@ -14,11 +14,8 @@ const searchLayoutReducer = function(state = initialState, action) {
         searchType: action.searchType,
         title: action.title
       });
-
   }
-
   return state;
-
 }
 
 export default searchLayoutReducer;

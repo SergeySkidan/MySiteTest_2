@@ -7,8 +7,6 @@ import { userActions } from '../actions';
 class LoginPage extends React.Component {
     constructor(props) {
         super(props);
-
-        // reset login status
         this.props.dispatch(userActions.logout());
 
         this.state = {

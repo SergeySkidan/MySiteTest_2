@@ -9,10 +9,14 @@
 
 .primary-header,
 .main-content,
-.primary-aside,
 .twin,
 .footer {
 	padding: 10px 10px;
+}
+
+.primary-aside{
+  padding-top: 10px;
+  padding-left: 0px;
 }
 
 .main-content {
@@ -107,13 +111,6 @@
     padding: 0;
  }
 
-.drop_vert_menu  ul {
-    list-style-type: none;
-    /* ширина выпадающего меню */
-    width: 350px;
-    margin: 0;
-    padding: 0;
-}
 
 .drop_vert_menu > li{
   position: relative;

@@ -14,16 +14,16 @@ function TitleDialog() {
     <Title color="blue">
 
     <div className="container">
-    <div className="decorative-title">
-      <div className="decorative-bar left vertical thick"></div>
-      <div className="decorative-bar left horizontal thick"></div>
-      <div className="decorative-bar left horizontal thin"></div>
-      <span>СПИННИНГ</span>
-      <div className="decorative-bar right vertical thick"></div>
-      <div className="decorative-bar right horizontal thick"></div>
-      <div className="decorative-bar right horizontal thin"></div>
-  </div>
-</div>
+      <div className="decorative-title">
+        <div className="decorative-bar left vertical thick"></div>
+        <div className="decorative-bar left horizontal thick"></div>
+        <div className="decorative-bar left horizontal thin"></div>
+        <span>СПИННИНГ</span>
+        <div className="decorative-bar right vertical thick"></div>
+        <div className="decorative-bar right horizontal thick"></div>
+        <div className="decorative-bar right horizontal thin"></div>
+        </div>
+      </div>
 
     </Title>
   );

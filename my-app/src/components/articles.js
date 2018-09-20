@@ -2,7 +2,6 @@ import React from 'react';
 
 import './articles.css';
 
-
 class Articles extends React.Component {
   render () {
     return (

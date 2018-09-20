@@ -13,3 +13,10 @@ export function deleteProductSuccess(productId) {
     productId
   };
 }
+
+export function addProductSuccess(product) {
+  return {
+    type: types.ADD_PRODUCT_SUCCESS,
+    product
+  };
+}

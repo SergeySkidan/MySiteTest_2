@@ -13,3 +13,10 @@ export function deleteBasketSuccess(basketId) {
     basketId
   };
 }
+
+export function addBasketSuccess(product) {
+  return {
+    type: types.ADD_BASKET_SUCCESS,
+    product
+  };
+}

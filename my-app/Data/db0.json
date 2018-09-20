@@ -46,7 +46,7 @@
       "id": 7,
       "name": "Спиннинг",
       "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18237152_52758550tmb.jpg",
-      "text": "Спиннинг Shimano Catana EX Tel 2.1m 3-14g",
+      "text": "Спиннинг Shimano Catana EX Telespin 21L 2.1m 3-14g",
       "price": "1310"
     },
     {
@@ -344,5 +344,20 @@
       "price": "413"
     }
   ],
-  "baskets": []
+  "baskets": [
+    {
+      "id": 49,
+      "name": "Кобра",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17910761_52598020tmb.jpg",
+      "text": "Кобра Prologic Carbolite  карбоновая в тубусе",
+      "price": "1850"
+    },
+    {
+      "id": 50,
+      "name": "Рогатка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18239903_52765028tmb.jpg",
+      "text": "Рогатка Stonfo Fionda Maxi 3",
+      "price": "413"
+    }
+  ]
 }

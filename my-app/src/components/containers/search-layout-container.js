@@ -9,18 +9,15 @@ const mapStateToProps = function(store) {
 
   if (searchType === 'products') {
     totalResults = store.productState.products.length;
-  } else if (searchType === 'leskas') {
-    totalResults = store.leskaState.leskas.length;
-  }else if (searchType === 'baskets') {
+  } else if (searchType === 'baskets') {
     totalResults = store.basketState.baskets.length;
   }
-  
+
   return {
     searchType,
     title: store.searchLayoutState.title,
     totalResults
   };
-
 };
 
 export default connect(mapStateToProps)(SearchLayout);
