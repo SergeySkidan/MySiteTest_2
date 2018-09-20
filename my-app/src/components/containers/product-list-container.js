@@ -6,26 +6,13 @@ import * as basketApi from '../../api/basket-api';
 
 import { loadSearchLayout } from '../../actions/search-layout-actions';
 
+var count = 0;
+var queryProducts= '';
 export class ProductListContainer extends React.Component{
 
-  componentDidMount = () => {
-    var queryProducts =this.id;
-    //alert('1'+queryProducts);
-    //добавляем слушателей на все ссылки
-    var inputs = document.getElementsByClassName("Links");
-    for (var i = 0; i < inputs.length; i++) {
-      inputs[i].addEventListener("click", filterProductsByClick);
-    }
-
-  function filterProductsByClick() {
-  //  alert('2'+queryProducts);
-        queryProducts = this.id;
-      //    alert('3'+queryProducts);
-        productApi.searchProducts(queryProducts);
-
-    }
-      this.props.dispatch(loadSearchLayout('products', 'Product Results'));
-  }
+//  componentDidMount = () => {
+//this.props.dispatch(loadSearchLayout('products', 'Product Results'));
+//}
 
   render() {
     return (

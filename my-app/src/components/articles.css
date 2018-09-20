@@ -1,3 +1,9 @@
+
+.articles{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .leftimg {
     float:left; /* Выравнивание по левому краю */
     margin: 7px 7px 7px 0; /* Отступы вокруг картинки */

@@ -1,7 +1,10 @@
 h2 {
   text-align: center;
 }
-
+.home-page{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .leftimg {
   float: left;
   /* Выравнивание по левому краю */
