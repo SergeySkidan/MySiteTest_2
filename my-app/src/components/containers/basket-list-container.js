@@ -7,10 +7,11 @@ import { store } from './../../helpers/store';
 import { loadSearchLayout } from '../../actions/search-layout-actions';
 
 class BasketListContainer extends React.Component{
+
   componentDidMount = () => {
     basketApi.getBaskets();
     this.props.dispatch(loadSearchLayout('baskets', 'Basket Results'));
-    
+
   }
 
   render() {
@@ -21,7 +22,7 @@ class BasketListContainer extends React.Component{
       for (var i = 0; i < f.length; i++) {
         c +=f[i].price
       }
-      alert('итого: '+ c);
+      alert('итого: '+ this.props.baskets);
       }
 
     return (

@@ -11,11 +11,10 @@ class ProductItem extends React.Component {
 
 addToCart = (event) => {
 basketApi.addBasket(this.props.product);
+var alertMessage = this.props.product;
+alert(alertMessage.text + ' -этот товар добавлен в корзину');
 
-var productAddToCart = JSON.parse(localStorage.getItem("BasketList")||"[]")
-productAddToCart = +productAddToCart+1 ;
-localStorage.setItem('BasketList', JSON.stringify(productAddToCart));
-document.getElementById('cauntAddToCart').innerHTML = productAddToCart;
+
 }
   render() {
     var product = this.props.product;

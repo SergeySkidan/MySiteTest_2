@@ -26,6 +26,8 @@ export function deleteBasket(basketId) {
 }
 
 export function addBasket(product) {
+
+var a = 0;
   axios({
     method: 'post',
     url: 'http://localhost:3001/baskets/',
@@ -36,5 +38,17 @@ export function addBasket(product) {
       text: product.text,
       price: product.price
     }
-  });
+  }).then(function(response) {
+        console.log(response);
+        var productAddToCart = JSON.parse(localStorage.getItem("BasketList")||"[]")
+        productAddToCart = +productAddToCart+1 ;
+        localStorage.setItem('BasketList', JSON.stringify(productAddToCart));
+        document.getElementById('cauntAddToCart').innerHTML = productAddToCart;
+      }).catch(function(error) {
+        console.log(error);
+      })
+
+
+
+
 }

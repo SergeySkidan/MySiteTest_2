@@ -344,5 +344,20 @@
       "price": "413"
     }
   ],
-  "baskets": []
+  "baskets": [
+    {
+      "id": 19,
+      "name": "Крючок",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18223783_52732003tmb.jpg",
+      "text": "Крючок Fudo Koaji Round BN №10",
+      "price": "40"
+    },
+    {
+      "id": 40,
+      "name": "Прикормка",
+      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18161769_52628807tmb.jpg",
+      "text": "Прикормка Fish Dream Club Лещ+ 0.8кг",
+      "price": "35"
+    }
+  ]
 }

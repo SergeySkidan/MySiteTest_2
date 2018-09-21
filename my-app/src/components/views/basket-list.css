@@ -1,11 +1,9 @@
 .basket-list
 {
-  width: 230px;
+  width: 780px;
   margin: 20px 20px;
-  text-align: center;
+  text-align: left;
   border: 1px solid #000;
-
-
 
   background:  #f39c12;
   background: linear-gradient(top,  #f39c12 0%, #ddb87a 100%);
@@ -19,21 +17,45 @@
     -23px 0 20px -23px rgba(0, 0, 0, .8),
     23px 0 20px -23px rgba(0, 0, 0, .8),
     0 0 40px rgba(0, 0, 0, .1) inset;
-
-  float: left; /* Обтекание по правому краю */
 }
 
+.basket__title
+{
+
+}
 .basket__image
 {
     margin: 2px;
-    max-width: 90%;
-    height: 200px;
+    width: 120px;
+    height: 120px;
+    float: left;
 }
 
 .basket__tips
 {
-  text-align: center;
+  text-align: left;
   font-size: 10pt; /* Размер шрифта в пунктах */
+
+}
+.basket__tips__end
+{
+   margin-top: 5px;
+  font-size: 10pt; /* Размер шрифта в пунктах */
+  float: left;
+}
+.input__counter__basket
+{
+  width: 40px;
+  text-align: left;
+  font-size: 10pt; /* Размер шрифта в пунктах */
+}
+.basket__price
+{
+margin: 15px;
+}
+.delete__button
+{
+
 }
 
 .basket-list:hover {
