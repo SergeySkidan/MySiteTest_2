@@ -4,22 +4,21 @@ import { Link } from 'react-router';
 
 import './basket-list.css';
 
-var counterBasket = 0;
 var priceCart = 0;
+
+
 export default class BasketList extends React.Component {
   constructor(props) {
         super(props);
-        this.state = {
-           basket: {
-               id: '',
-               name: '',
-               image: '',
-               text: '',
-               price: '',
-               counterBasket: 0
-           },
-           submitted: false
-         }
+        // this.state = {
+        //    basket: {
+        //        id: '',
+        //        name: '',
+        //        image: '',
+        //        text: '',
+        //        price: '',
+        //        counterBasket: 1
+        //    }}
       this.state = {
       counterBasket: 1
     };
@@ -48,7 +47,6 @@ export default class BasketList extends React.Component {
       <div className="basket-list">
       {this.props.baskets.map(basket => {
           return (
-
                 <div key={basket.id} className="basket-list-item">
               <ul>
                 <li><h4 className='basket__title'>{basket.name}</h4></li>
@@ -57,8 +55,10 @@ export default class BasketList extends React.Component {
                 <li><div className='basket__tips'>Цена: {basket.price}</div></li>
                 <li><div className='basket__tips'>Код товара: {basket.id}</div></li>
                 <li><div className='basket__tips__end'>Количество: </div></li>
-                <li><input className='input__counter__basket' id = {basket.id} name="counterBasket" type="number" min="1" max="11" value={this.state.counterBasket}onChange={this.handleInputChange}/></li>
-                <li><div className='basket__price'>Итого: {basket.price*this.state.counterBasket}</div></li>
+
+                <li><input className='input__counter__basket' id={`${basket.id}`} name="counterBasket" type="number" min="1" max="11"
+                     value={this.props.counterBasket} onChange={this.props.handleInputChange}/></li>
+                   <li><div className='basket__price'>Итого: {basket.price*this.state.counterBasket}</div></li>
                 <li><button onClick={this.props.deleteBasket.bind(null, basket.id)} className="delete__button">Удалить из корзины</button></li>
 
                 {/*  <div>
