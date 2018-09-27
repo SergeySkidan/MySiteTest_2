@@ -344,31 +344,6 @@
       "price": "413"
     }
   ],
-  "baskets": [
-    {
-      "id": 5,
-      "name": "Спиннинг",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18215110_52733553tmb.jpg",
-      "text": "Спиннинг Favorite X1 DX 240H 2.4m 20-50g",
-      "price": "265",
-      "counter": 1
-    },
-    {
-      "id": 14,
-      "name": "Катушка",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18234028_52752470tmb.jpg",
-      "text": "Катушка Daiwa  Black 4000 2500S",
-      "price": "8220",
-      "counter": 1
-    },
-    {
-      "id": 7,
-      "name": "Спиннинг",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18237152_52758550tmb.jpg",
-      "text": "Спиннинг Shimano Catana EX Tel 2.1m 3-14g",
-      "price": "1310",
-      "counter": 1
-    }
-  ],
+  "baskets": [],
   "checkout": []
 }

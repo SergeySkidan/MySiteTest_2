@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import * as productApi from '../api/product-api';
 
 import { userActions } from '../actions';
+import './AccountPage.css';
 
 class AccountPage extends React.Component {
   constructor(props) {
@@ -56,24 +57,26 @@ class AccountPage extends React.Component {
 
       const { user, users } = this.props;
         return (
-            <div className="col-md-6 col-md-offset-3">
+            <div className="login__users">
                 <h3>Вы вошли как: {user.firstName}!</h3>
                 <h5>Все зарегистрированные пользователи:</h5>
                 {users.loading && <em>Загрузка рользователей...</em>}
-                {users.error && <span className="text-danger">ERROR: {users.error}</span>}
+                {users.error && <span className="text__danger">ERROR: {users.error}</span>}
                 {users.items &&
+                  <div className="tabl__users">
                     <ul>
                         {users.items.map((user, index) =>
                             <li key={user.id}>
                                 {user.firstName + ' ' + user.lastName}
                                 {
-                                    user.deleting ? <em> - Deleting...</em>
-                                    : user.deleteError ? <span className="text-danger"> - ERROR: {user.deleteError}</span>
+                                  user.deleting ? <em> - Удаление...</em>
+                                  : user.deleteError ? <span className="text-danger"> - ERROR: {user.deleteError}</span>
                                   : <span> - <a onClick={this.handleDeleteUser(user.id)}>Удалить</a></span>
                                 }
                             </li>
                         )}
                     </ul>
+                    </div>
                 }
                 <p>
                     <Link to="/login">Выйти</Link>
