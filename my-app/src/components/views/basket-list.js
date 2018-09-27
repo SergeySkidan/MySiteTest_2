@@ -37,8 +37,9 @@ var cart ='';
     var basket = this.props.basket;
       return (<div className='basket-list'>
     <ul>
-      <li><h4 className='basket__title'>{this.props.basket.name}</h4></li>
+
       <li><img src={this.props.basket.image} alt={this.props.basket.name} className='basket__image'/></li>
+      <li><h5 className='basket__title'>{this.props.basket.name}</h5></li>
       <li><div className='basket__tips'>Модель:{this.props.basket.text}</div></li>
       <li><div className='basket__tips'>Цена:{this.props.basket.price}</div></li>
       <li><div className='basket__tips'>Код товара: {this.props.basket.id}</div></li>
