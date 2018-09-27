@@ -1,104 +1,89 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-
+import * as basketApi from '../../api/basket-api';
 
 import './basket-list.css';
 
 var priceCart = 0;
-
-
-export default class BasketList extends React.Component {
+var cart ='';
+ class BasketItem extends React.Component {
   constructor(props) {
         super(props);
-        // this.state = {
-        //    basket: {
-        //        id: '',
-        //        name: '',
-        //        image: '',
-        //        text: '',
-        //        price: '',
-        //        counterBasket: 1
-        //    }}
-      this.state = {
-      counterBasket: 1
-    };
-
-    this.handleInputChange = this.handleInputChange.bind(this);
+        this.state = {
+           basket: {
+               id: '',
+               name: '',
+               image: '',
+               text: '',
+               price: '',
+               counter: ''
+     }}
+  }
+  deleteBasket(e){
+    basketApi.deleteBasket(this.props.basket.id);
   }
 
   handleInputChange(event) {
-    const target = event.target;
-    const value = target.value;
-    const name = target.name;
+      var newbasket = this.props.basket;
+      newbasket.counter = event.target.value;
+      basketApi.putBasket(newbasket.id);
 
     this.setState({
-      [name]: value
-    });
+    counter: event.target.value
+  });
   }
 
   render() {
-    priceCart = 0;
-    var basketsList = this.props.baskets;
-    for (var key in basketsList) {
-    priceCart += this.state.counterBasket*basketsList[key].price;
-    }
+    var basket = this.props.basket;
+      return (<div className='basket-list'>
+    <ul>
+      <li><h4 className='basket__title'>{this.props.basket.name}</h4></li>
+      <li><img src={this.props.basket.image} alt={this.props.basket.name} className='basket__image'/></li>
+      <li><div className='basket__tips'>Модель:{this.props.basket.text}</div></li>
+      <li><div className='basket__tips'>Цена:{this.props.basket.price}</div></li>
+      <li><div className='basket__tips'>Код товара: {this.props.basket.id}</div></li>
+      <li><div className='basket__tips__end'>Количество: </div></li>
 
-    return (
-      <div className="basket-list">
-      {this.props.baskets.map(basket => {
-          return (
-                <div key={basket.id} className="basket-list-item">
-              <ul>
-                <li><h4 className='basket__title'>{basket.name}</h4></li>
-                <li><img src={basket.image} alt={basket.name} className='basket__image'/></li>
-                <li><div className='basket__tips'>Модель: {basket.text}</div></li>
-                <li><div className='basket__tips'>Цена: {basket.price}</div></li>
-                <li><div className='basket__tips'>Код товара: {basket.id}</div></li>
-                <li><div className='basket__tips__end'>Количество: </div></li>
+      <li><input  className='input__counter__basket'  name="counterBasket" type="number" min="1" max="11"
+         value={basket.counter} onChange={(e) => this.handleInputChange(e)}/></li>
 
-                <li><input className='input__counter__basket' id={`${basket.id}`} name="counterBasket" type="number" min="1" max="11"
-                     value={this.props.counterBasket} onChange={this.props.handleInputChange}/></li>
-                   <li><div className='basket__price'>Итого: {basket.price*this.state.counterBasket}</div></li>
-                <li><button onClick={this.props.deleteBasket.bind(null, basket.id)} className="delete__button">Удалить из корзины</button></li>
-
-                {/*  <div>
-                       {thema.map(({ id, name, test }) => (
-                         <div key={id} className='container'>
-                         <h1>{name}</h1>
-                         <form>
-                           {test.map(question => (
-                             <div
-                               key={question.id}
-                               className='question'
-                             >
-                               <p>{question.name}</p>
-                                 <ul>
-                                   {question.answer.map(answer => (
-                                     <li key={answer.id}>
-                                       {answer.text}
-                                       <input
-                                         type='radio'
-                                         name={answer.id_question}
-                                       />
-                                       <button>Ответить</button>
-                                     </li>
-                                   ))}
-                                </ul>
-                             </div>
-                           ))}
-                         </form>
-                       </div>
-                       ))}
-                     </div>*/}
-
-              </ul>
-          </div>);
-        })
-      }
-
-      <div>Итого по заказу: {priceCart} грн</div>
-      <button onClick={this.checkout} className="checkout__button">Оформить заказ</button>
-    </div>
-   );
+      <li><div className='basket__price'>Итого: {basket.price*basket.counter} грн</div></li>
+      <li><button onClick={(e) => this.deleteBasket(e)} className="delete__button">Удалить из корзины</button></li>
+    </ul>
+</div>)
   }
+}
+
+export default class BasketList extends React.Component {
+
+  checkOut(e){
+    priceCart = 0;
+    cart = '';
+    var basketsList = this.props.baskets;
+
+    cart += "Ваш заказ:"+"\n \n";
+    for (var key in basketsList) {
+    priceCart += basketsList[key].counter*basketsList[key].price;
+    cart += basketsList[key].text+"\n";
+    cart += "Цена за единицу: "+basketsList[key].price+" грн \n";
+    cart += "Количество: "+basketsList[key].counter+" шт \n";
+    cart += "Цена за все: "+basketsList[key].counter*basketsList[key].price+" грн \n \n";
+    basketApi.deleteBasket(basketsList[key].id);
+    }
+    cart += "Итого сумма заказа: "+priceCart+" грн \n \n";
+    alert(cart);
+  }
+
+  render() {
+    const baskets = this.props.baskets;
+    const items = baskets.map((basket) => {
+    return <BasketItem id='items' key={basket.id}  className="basket-list-item" basket={basket}/>;
+    });
+    return (
+      <div>
+      {items}
+      <button onClick={(e) => this.checkOut(e)} className="checkout__button">Оформить заказ</button>
+      </div>
+          );
+        }
 }

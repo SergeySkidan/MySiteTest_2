@@ -20,3 +20,10 @@ export function addBasketSuccess(product) {
     product
   };
 }
+
+export function putBasketSuccess(basketId) {
+  return {
+    type: types.PUT_BASKET_SUCCESS,
+    basketId
+  };
+}

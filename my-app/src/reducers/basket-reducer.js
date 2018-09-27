@@ -16,9 +16,12 @@ const basketReducer = function(state = initialState, action) {
     return Object.assign({}, state, { baskets: action.baskets });
 
     case types.DELETE_BASKET_SUCCESS:
-
     const newBaskets = _.filter(state.baskets, basket => basket.id != action.basketId);
     return Object.assign({}, state, { baskets: newBaskets })
+
+    case types.PUT_BASKET_SUCCESS:
+    const putBaskets = _.filter(state.baskets, basket => basket.id != action.basketId);
+    return Object.assign({}, state, { baskets: putBaskets })
 
   }
   return state;

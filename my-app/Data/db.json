@@ -25,7 +25,7 @@
       "id": 5,
       "name": "Спиннинг",
       "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18215110_52733553tmb.jpg",
-      "text": "Favorite X1 DX 240H 2.4m 20-50g",
+      "text": "Спиннинг Favorite X1 DX 240H 2.4m 20-50g",
       "price": "265"
     },
     {
@@ -344,20 +344,6 @@
       "price": "413"
     }
   ],
-  "baskets": [
-    {
-      "id": 40,
-      "name": "Прикормка",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/18161769_52628807tmb.jpg",
-      "text": "Прикормка Fish Dream Club Лещ+ 0.8кг",
-      "price": "35"
-    },
-    {
-      "id": 33,
-      "name": "Поводок",
-      "image": "https://ibis.net.ua/published/publicdata/STORE/attachments/SC/products_pictures/17844151_52745102tmb.jpg",
-      "text": "Поводок UKRSPIN плетеный 1x7 15см 7кг",
-      "price": "16"
-    }
-  ]
+  "baskets": [],
+  "checkout": []
 }

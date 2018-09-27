@@ -10,9 +10,6 @@ var count = 0;
 var queryProducts= '';
 export class ProductListContainer extends React.Component{
 
-//  componentDidMount = () => {
-//this.props.dispatch(loadSearchLayout('products', 'Product Results'));
-//}
 
   render() {
     return (

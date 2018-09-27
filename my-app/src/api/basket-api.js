@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { store } from './../helpers';
-import { getBasketsSuccess, deleteBasketSuccess, addBasketSuccess } from '../actions/basket-actions';
+import { getBasketsSuccess, deleteBasketSuccess, addBasketSuccess, putBasketSuccess } from '../actions/basket-actions';
 
 
 export function getBaskets() {
@@ -26,8 +26,6 @@ export function deleteBasket(basketId) {
 }
 
 export function addBasket(product) {
-
-var a = 0;
   axios({
     method: 'post',
     url: 'http://localhost:3001/baskets/',
@@ -36,7 +34,8 @@ var a = 0;
       name: product.name,
       image: product.image,
       text: product.text,
-      price: product.price
+      price: product.price,
+      counter: 1
     }
   }).then(function(response) {
         console.log(response);
@@ -47,8 +46,19 @@ var a = 0;
       }).catch(function(error) {
         console.log(error);
       })
+}
 
-
-
-
+export function putBasket(basket) {
+  axios({
+    method: 'put',
+    url: 'http://localhost:3001/baskets/',
+    data: {
+      id: basket.id,
+      name: basket.name,
+      image: basket.image,
+      text: basket.text,
+      price: basket.price,
+      counter: basket.counter
+    }
+  })
 }

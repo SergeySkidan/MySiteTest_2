@@ -5,7 +5,6 @@ import {  Link } from "react-router-dom";
 
 import { BrowserRouter } from 'react-router-dom';
 import * as productApi from '../api/product-api';
-//import filterProductsByClick from '../components/containers/product-list-container';
 import './product.constants.css';
 
 var  queryProducts='';
@@ -14,9 +13,6 @@ queryProducts = this.id;
 productApi.searchProducts(queryProducts);
 queryProducts='';
 }
-
-
-
 
 export const FishingGear = ({ match }) => (
   <div className ="menu-list">
