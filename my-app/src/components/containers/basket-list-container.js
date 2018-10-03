@@ -16,17 +16,9 @@ class BasketListContainer extends React.Component{
 
   render() {
 
-      function estimate() {
-      var c;
-      var f = basketApi.getBaskets();
-      for (var i = 0; i < f.length; i++) {
-        c +=f[i].price
-      }
-      alert('итого: '+ this.props.baskets);
-      }
 
     return (
-      <BasketList baskets={this.props.baskets} deleteBasket={basketApi.deleteBasket} estimate = {estimate} />
+      <BasketList baskets={this.props.baskets} deleteBasket={basketApi.deleteBasket} />
     );
   }
 };
