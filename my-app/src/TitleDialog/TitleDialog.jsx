@@ -18,7 +18,7 @@ function TitleDialog() {
         <div className="decorative-bar left vertical thick"></div>
         <div className="decorative-bar left horizontal thick"></div>
         <div className="decorative-bar left horizontal thin"></div>
-        <span>СПИННИНГ</span>
+        <h1>СПИННИНГ</h1>
         <div className="decorative-bar right vertical thick"></div>
         <div className="decorative-bar right horizontal thick"></div>
         <div className="decorative-bar right horizontal thin"></div>
